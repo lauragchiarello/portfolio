@@ -226,7 +226,8 @@ main {
     display: flex;
     flex-direction: column;
 }
-.descricao-projetos p{
+
+.descricao-projetos p {
     padding-bottom: 0px;
 }
 
@@ -297,7 +298,9 @@ form {
 }
 
 @media (max-width: 768px) {
-    html, body {
+
+    html,
+    body {
         overflow-x: hidden;
     }
 
@@ -348,36 +351,43 @@ form {
     #habilidades {
         flex-direction: column;
         text-align: center;
+
         width: 100%;
-        padding: 40px 20px;
+        padding: 40px 0px;
     }
 
-    .projetos p{
+    .projetos p {
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
-    .projetos-box{
+
+    .projetos-box {
         margin: 20px 0px;
     }
+
     .habilidades-esquerda,
     .habilidades-direita {
         width: 100%;
         margin: 0 auto;
-        padding: 0px;
+     
     }
 
-        .habilidades-direita {
+    .habilidades-esquerda p{
+        padding: 0px 30px;
+    }
+    .habilidades-direita {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-        .alinhar-logop {
+    .alinhar-logop {
         width: 90%;
         flex-wrap: wrap;
         justify-content: center;
         padding: 10px;
+        margin:10px 0px;
     }
 
     .habilidades-direita img {
@@ -401,12 +411,11 @@ form {
 
     .botao-projetos {
         align-self: center;
-        width: 80%;
+        width: 100%;
         margin-top: 10px;
     }
 
-
     .campo-form {
-        width: 90%;
+        max-width: 300px;
     }
 }
